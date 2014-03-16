@@ -28,9 +28,7 @@ var results = [
 
 gulp.task('scripts', function () {
     gulp.src(scripts)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('.'))
-        .pipe(rename('scripts.min.js'))
+        .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.'));
 });
@@ -38,9 +36,7 @@ gulp.task('scripts', function () {
 
 gulp.task('styles', function () {
     gulp.src(styles)
-        .pipe(concat('styles.css'))
-        .pipe(gulp.dest('.'))
-        .pipe(rename('styles.min.css'))
+        .pipe(concat('styles.min.css'))
         .pipe(minify())
         .pipe(gulp.dest('.'));
 });
