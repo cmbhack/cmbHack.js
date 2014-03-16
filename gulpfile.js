@@ -8,15 +8,15 @@ var rename = require('gulp-rename');
 var smoosh = require('gulp-smoosher');
 
 var scripts = [
-     'bower_components/foundation/js/vendor/*.js'
-    ,'bower_components/foundation/js/foundation.js'
+     'vendor_assets/foundation-essentials/js/vendor/*.js'
+    ,'vendor_assets/foundation-essentials/js/*.js'
     ,'site_assets/scripts/includes/*.js'
     ,'site_assets/scripts/*.js'
 ];
 
 var styles = [
-     'bower_components/foundation/css/normalize.css'
-    ,'bower_components/foundation/css/foundation.css'
+     'vendor_assets/foundation-essentials/css/*.css'
+    ,'site_assets/styles/*.css'
 ];
 
 var results = [
@@ -28,9 +28,7 @@ var results = [
 
 gulp.task('scripts', function () {
     gulp.src(scripts)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('.'))
-        .pipe(rename('scripts.min.js'))
+        .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.'));
 });
@@ -38,9 +36,7 @@ gulp.task('scripts', function () {
 
 gulp.task('styles', function () {
     gulp.src(styles)
-        .pipe(concat('styles.css'))
-        .pipe(gulp.dest('.'))
-        .pipe(rename('styles.min.css'))
+        .pipe(concat('styles.min.css'))
         .pipe(minify())
         .pipe(gulp.dest('.'));
 });
