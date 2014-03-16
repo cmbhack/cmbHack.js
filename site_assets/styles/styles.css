@@ -1,0 +1,24 @@
+
+body {
+  background: white;
+  color: rgb(50, 50, 50);
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+body>header {
+    background: rgb(240, 220, 80);
+    padding: 10rem 2rem 1rem;
+}
+
+body>header h1 {
+    margin: 0;
+    font-size: 7rem;
+    font-weight: bold;
+}
