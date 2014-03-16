@@ -8,15 +8,15 @@ var rename = require('gulp-rename');
 var smoosh = require('gulp-smoosher');
 
 var scripts = [
-     'bower_components/foundation/js/vendor/*.js'
-    ,'bower_components/foundation/js/foundation.js'
+     'vendor_assets/foundation-essentials/js/vendor/*.js'
+    ,'vendor_assets/foundation-essentials/js/*.js'
     ,'site_assets/scripts/includes/*.js'
     ,'site_assets/scripts/*.js'
 ];
 
 var styles = [
-     'bower_components/foundation/css/normalize.css'
-    ,'bower_components/foundation/css/foundation.css'
+     'vendor_assets/foundation-essentials/css/*.css'
+    ,'site_assets/styles/*.css'
 ];
 
 var results = [
