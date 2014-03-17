@@ -13,3 +13,10 @@ Developer Guidelines
   * Make some awesome commits on your new branch
   * Push your changes to Github `git push origin my-awesome-feature`
   * Send a pull request from Github
+
+To Do List
+----------
+
+  * Use logos for sponsors
+  * Complete FAQ section
+  * Add other required info
