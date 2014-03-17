@@ -16,6 +16,7 @@ var scripts = [
 
 var styles = [
      'vendor_assets/foundation-essentials/css/*.css'
+    ,'vendor_assets/font-awesome/css/font-awesome.css'
     ,'site_assets/styles/*.css'
 ];
 
