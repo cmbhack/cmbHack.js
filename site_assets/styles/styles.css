@@ -35,9 +35,17 @@ body > header h2 {
 @media only screen and (max-width: 40em) {
     body > header h1 {
         font-size: 2.5rem;
+        text-align: center;
     }
     body > header h2 {
         display: none;
+    }
+    .cmbjs-tweets {
+        display: none;
+    }
+    .social {
+        top: 1rem;
+        right: 1rem;
     }
 }
 
@@ -64,9 +72,34 @@ main .row.padded:first-child {
     padding-top: 2rem;
 }
 
+.cmbjs-flow li span,
+.cmbjs-rules span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.cmbjs-flow li {
+    min-height: 30px;
+    margin: 5px 0;
+}
+
+.cmbjs-flow li span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: rgb(230, 230, 230);
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 2px;
+    border: solid 2px;
+    margin-right: 5px;
+}
+
 body > footer {
     background: rgb(50, 50, 50);
     color: white;
+    text-align: center;
 }
 
 .nomargin {
