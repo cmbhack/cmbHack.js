@@ -8,7 +8,7 @@
 
 
   function loadPageContent () {
-    var link = '/content/'+location.hash.slice(1)+'.md';
+    var link = 'content/'+location.hash.slice(1)+'.md';
     $.get(link).fail(loadHomepage).done(function (res) {
       var content = $('<div class="row padded"></div>').html(marked(res))
       container.empty().append(content);
