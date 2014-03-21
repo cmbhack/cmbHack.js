@@ -1,0 +1,160 @@
+
+body {
+  background: white;
+  color: rgb(50, 50, 50);
+}
+
+body > header {
+  position: relative;
+  background: #FFF6BA;
+  padding: 6rem 2rem 1rem;
+}
+
+body > header h1 {
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro";
+}
+
+body > header h1 a,
+body > header h1 a:hover {
+  color: rgb(50, 50, 50);
+}
+
+body > header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Source Sans Pro";
+}
+
+h5 {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 40em) {
+  body > header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  body > header h2 {
+    display: none;
+  }
+  .cmbjs-tweets {
+    display: none;
+  }
+  .social {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.lead a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #bbb;
+}
+
+.lead a:hover {
+  padding-bottom: 3px;
+  border-bottom: 0;
+}
+
+.social {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+.social a,
+.social a:hover {
+  display: inline-block;
+  width: 1.5rem;
+  text-align: center;
+  color: rgb(50, 50, 50);
+}
+
+.row.padded {
+  padding: 1rem 0;
+}
+
+main .row.padded:first-child {
+  padding-top: 2rem;
+  min-height: 500px;
+}
+
+.cmbjs-flow li span,
+.cmbjs-rules span {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.cmbjs-flow li {
+  min-height: 30px;
+  margin: 5px 0;
+}
+
+.cmbjs-flow li span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: rgb(230, 230, 230);
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 2px;
+  border: solid 2px;
+  margin-right: 5px;
+}
+
+.no-border li span {
+  border: 0px;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.red {
+  color: rgb(255, 73, 73);
+}
+
+.register-now {
+  font-family: "Source Sans Pro";
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 3px;
+  background-color: #5D24C0;
+}
+
+body > footer {
+  background: #444;
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro"
+}
+
+body > footer a {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+
+body > footer a:hover {
+  color: white;
+  border-bottom: 0;
+}
+
+.nomargin {
+  margin: 0 0 0 0;
+}
+
+.temp {
+  color: red;
+}
