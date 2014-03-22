@@ -1,4 +1,5 @@
-(function () {
+
+document.addEventListener('DOMContentLoaded', function () {
 
   var container = $('#main');
   var HOMEPAGE = container.html();
@@ -16,4 +17,4 @@
     });
   }
 
-})();
+});
