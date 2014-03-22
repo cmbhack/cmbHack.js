@@ -1,16 +1,48 @@
 
+
+
+/*
+ * GLOBALS
+ */
+
 body {
-  background: white;
-  color: rgb(50, 50, 50);
+ background: white;
+ color: rgb(50, 50, 50);
 }
 
-body > header {
+.row.padded {
+  padding: 1rem 0;
+}
+
+#main .row.padded:first-child {
+  padding-top: 2rem;
+}
+
+.red {
+  color: rgb(255, 73, 73);
+}
+
+.nomargin {
+  margin: 0 0 0 0;
+}
+
+.temp {
+  color: red;
+}
+
+
+
+/*
+ * HEADER
+ */
+
+#header {
   position: relative;
   background: #FFF6BA;
   padding: 6rem 2rem 1rem;
 }
 
-body > header h1 {
+#header h1 {
   margin: 0;
   font-size: 7rem;
   font-weight: 900;
@@ -19,52 +51,17 @@ body > header h1 {
   font-family: "Source Sans Pro";
 }
 
-body > header h1 a,
-body > header h1 a:hover {
+#header h1 a,
+#header h1 a:hover {
   color: rgb(50, 50, 50);
 }
 
-body > header h2 {
+#header h2 {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1;
   font-family: "Source Sans Pro";
-}
-
-h5 {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #444;
-  border-bottom: 1px solid #ddd;
-}
-
-@media only screen and (max-width: 40em) {
-  body > header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  body > header h2 {
-    display: none;
-  }
-  .cmbjs-tweets {
-    display: none;
-  }
-  .social {
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
-.lead a {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #bbb;
-}
-
-.lead a:hover {
-  padding-bottom: 3px;
-  border-bottom: 0;
 }
 
 .social {
@@ -82,28 +79,93 @@ h5 {
   color: rgb(50, 50, 50);
 }
 
-.row.padded {
-  padding: 1rem 0;
+@media only screen and (max-width: 40em) {
+  #header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  #header h2 {
+    display: none;
+  }
+  .cmbjs-tweets {
+    display: none;
+  }
+  .social {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
-main .row.padded:first-child {
-  padding-top: 2rem;
+
+
+/*
+ * FOOTER
+ */
+
+#footer {
+  background: #444;
+  color: white;
+  text-align: center;
+  font-family: "Source Sans Pro"
+}
+
+#footer a {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+
+#footer a:hover {
+  color: white;
+  border-bottom: 0;
+}
+
+
+
+/*
+ * MAIN
+ */
+
+#main {
   min-height: 500px;
 }
 
-.cmbjs-flow li span,
-.cmbjs-rules span {
+
+/*
+ *.index
+ */
+
+.index h5 {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+.index .lead a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #bbb;
+}
+
+.index .lead a:hover {
+  padding-bottom: 3px;
+  border-bottom: 0;
+}
+
+.index .cmbjs-flow li span,
+.index .cmbjs-rules span {
   display: inline-block;
   width: 30px;
   text-align: center;
 }
 
-.cmbjs-flow li {
+.index .cmbjs-flow li {
   min-height: 30px;
-  margin: 5px 0;
+  margin: 5px 0 5px 40px;
 }
 
-.cmbjs-flow li span {
+.index .cmbjs-flow li span {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -113,48 +175,19 @@ main .row.padded:first-child {
   padding-top: 2px;
   border: solid 2px;
   margin-right: 5px;
+  margin-left: -40px;
 }
 
-.no-border li span {
+.index .no-border li span {
   border: 0px;
   background-color: transparent;
   font-size: 1.5rem;
 }
 
-.red {
-  color: rgb(255, 73, 73);
-}
-
-.register-now {
+.index .register-now {
   font-family: "Source Sans Pro";
   font-size: 1.5rem;
   font-weight: 400;
   border-radius: 3px;
   background-color: #5D24C0;
-}
-
-body > footer {
-  background: #444;
-  color: white;
-  text-align: center;
-  font-family: "Source Sans Pro"
-}
-
-body > footer a {
-  color: white;
-  padding-bottom: 3px;
-  border-bottom: 1px solid white;
-}
-
-body > footer a:hover {
-  color: white;
-  border-bottom: 0;
-}
-
-.nomargin {
-  margin: 0 0 0 0;
-}
-
-.temp {
-  color: red;
 }
