@@ -12,124 +12,144 @@
 
   <script src="vendor/foundation/js/vendor/modernizr.js"></script>
   <script src="vendor/foundation/js/vendor/jquery.js"></script>
-  <script src="vendor/foundation/js/foundation.min.js"></script>
 
 </head>
 <body>
 
-  <header>
-    <div class="row">
-      <h1><a href="#">cmbHack.js</a></h1>
-      <h2>Sri Lanka's First Hackathon for JavaScript Developers</h2>
-      <div class="social">
-        <a href="http://goo.gl/iKgkvp"><i class="fa fa-map-marker"></i></a>
-        <a href="https://www.facebook.com/cmbHack"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/cmbhack"><i class="fa fa-twitter"></i></a>
-      </div>
-    </div>
-  </header>
+  <div class="off-canvas-wrap">
+    <div class="inner-wrap">
 
-  <main id="container">
-
-    <div class="row padded">
-
-      <div class="small-12 large-6 columns">
-
-        <p class="lead">From <strong>5th April 9:00 am to 6th April 9:00 pm</strong> at the <a href='https://plus.google.com/115668075860765951814/about?gl=lk&hl=en'>Orion City</a></p>
-
-        <h5>This is how cmbHack.js works</h5>
-        <ul class="cmbjs-flow no-bullet">
-          <li>
-          <span><i class="fa fa-rocket"></i></span>
-          You come to the hackathon
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">cmbHack.js</a></h1>
           </li>
-          <li>
-          <span><i class="fa fa-lightbulb-o"></i></span>
-          Pitch your idea
-          </li>
-          <li>
-          <span><i class="fa fa-check"></i></span>
-          Vote for your favorite ideas
-          </li>
-          <li>
-          <span><i class="fa fa-sort-amount-desc"></i></span>
-          We select top 10 ideas by votes
-          </li>
-          <li>
-          <span><i class="fa fa-users"></i></span>
-          Join a team or recruit members
-          </li>
-          <li>
-          <span><i class="fa fa-code-fork"></i></span>
-          Hack something awesome
-          </li>
-          <li>
-          <span><i class="fa fa-bullhorn"></i></span>
-          Present your idea & win awesome prizes
-          </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
         </ul>
 
-        <h5>Rules & Guidelines</h5>
-        <ul class="cmbjs-flow no-bullet no-border">
-          <li>
-          <span><i class="fa fa-exclamation-triangle red"></i>
-          </span>
-          <strong>You must use JavaScript.</strong>
-          </li>
-          <li>
-          <span><i class="fa fa-lightbulb-o"></i></span>
-          <a href='#'> We prefer Hacks & Mashups over Traditional Web Apps </a>
-          </li>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a class="right-off-canvas-toggle"><i class="fa fa-bars"></i> Resources</a></li>
+          </ul>
+
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="#hacking">Hacking at cmbHack.js</a></li>
+            <li><a href="#rules">Rules and Guidelines</a></li>
+            <!-- <li class="has-dropdown">
+              <a href="#">Button Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">Link in dropdown</a></li>
+                <li><a href="#">Link in dropdown</a></li>
+                <li><a href="#">Link in dropdown</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </section>
+      </nav>
+
+      <aside class="right-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>Javascript</label></li>
+          <li><a href="#">JS - The Right Way</a></li>
+          <li><a href="#">Superhero.js</a></li>
+          <li><label>Online Backend Services</label></li>
+          <li><a href="#">Firebase</a></li>
+          <li><a href="#">GoInstant</a></li>
+          <li><a href="#">UserApp</a></li>
+          <li><label>Online Database Services</label></li>
+          <li><a href="#">MongoHQ</a></li>
+          <li><a href="#">Cloudant</a></li>
+          <li><a href="#">Redislabs</a></li>
+          <li><label>Server Side Frameworks</label></li>
+          <li><a href="#">Express.js</a></li>
+          <li><a href="#">Meteor.js</a></li>
+          <li><a href="#">Jaggery.js</a></li>
+          <li><label>Frontend Frameworks</label></li>
+          <li><a href="#">Backbone.js</a></li>
+          <li><a href="#">Angular.js</a></li>
+          <li><a href="#">Ember.js</a></li>
+          <li><a href="#">Knockout.js</a></li>
+          <li><label>User Interface Toolkits</label></li>
+          <li><a href="#">Twitter Bootstrap</a></li>
+          <li><a href="#">Zurb Foundation</a></li>
+          <li><label>JavaScript for Desktop</label></li>
+          <li><a href="#">Node-Webkit</a></li>
+          <li><label>JavaScript for Hardware</label></li>
+          <li><a href="#">Noduino</a></li>
+          <li><label>Other Resources</label></li>
+          <li><a href="#">Deploying</a></li>
+          ...
         </ul>
+      </aside>
 
-        <a href="#register" class="button expand register-now">Register Now <i class="fa fa-exclamation"></i></a>
+      <section class="main-section">
 
-      </div>
-      <div class="cmbjs-tweets small-12 large-6 columns">
-        <a class="twitter-timeline" href="https://twitter.com/search?q=%23cmbHack.js" data-widget-id="445320032805851136" data-chrome="noscrollbar">Tweets about "#cmbHack.js"</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
+        <header id="header">
+          <div class="row">
+            <h1><a href="#">cmbHack.js</a></h1>
+            <h2>Sri Lanka's First Hackathon for JavaScript Developers</h2>
+            <div class="social">
+              <a href="http://goo.gl/iKgkvp"><i class="fa fa-map-marker"></i></a>
+              <a href="https://www.facebook.com/cmbHack"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/cmbhack"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </header>
 
-    </div>
+        <main id="main" class="index">
 
-    <div class="row padded">
+          <div class="row padded">
 
-      <div class="small-12 columns">
-<!--
-        <h3>Sponsors</h3>
-        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-          <li>WSO2</li>
-          <li>99xTech</li>
-          <li>Virtusa</li>
-          <li>Pearson</li>
-          <li>Cinergix</li>
-          <li>MIT</li>
-          <li>Meteor</li>
-          <li>Google</li>
-          <li>Microsoft</li>
-          <li>ESOFT</li>
-          <li>Digit</li>
-          <li>YAMU</li>
-          <li>Readme</li>
-          <li>Xiteb</li>
-          <li>SLASSCOM</li>
-          <li>LAN</li>
-        </ul>
- -->
-      </div>
+            <div class="small-12 large-7 columns">
+              <div class="panel">
+                <p>From <strong>5th April 9:00 am to 6th April 9:00 pm</strong> at the <a href='https://plus.google.com/115668075860765951814/about?gl=lk&hl=en'>Orion City</a></p>
+              </div>
+              <h5>Hacking at cmbHack.js is easy</h5>
+              <ul class="cmbjs-flow no-bullet">
+                <li><span><i class="fa fa-rocket"></i></span> Come to the hackathon venue with your dev-toolbox</li>
+                <li><span><i class="fa fa-lightbulb-o"></i></span> Pitch your idea or vote for an idea you like <br> <a href="#hacking">Guidelines</a> for your ideas (just guidelines, break anything if you need)</li>
+                <li><span><i class="fa fa-sort-amount-desc"></i></span> We select top 10 ideas based on the votes</li>
+                <li><span><i class="fa fa-users"></i></span> Join a team or recruit members for your team</li>
+                <li><span><i class="fa fa-code-fork"></i></span> Hack, tinker and build something awesome (within 32 hours)</li>
+                <li><span><i class="fa fa-bullhorn"></i></span> Present your idea & amaze others <br> We have some awesome list of prizes waiting for you</li>
+              </ul>
+              <p>Continue reading More information about <a href="#hacking">Hacking at cmbHack.js</a></p>
+              <a href="#register" class="button expand register-now">Register Now <i class="fa fa-exclamation"></i></a>
+            </div>
 
-    </div>
-  </main>
+            <div class="cmbjs-tweets small-12 large-5 columns">
+              <a class="twitter-timeline" href="https://twitter.com/search?q=%23cmbHack.js" data-widget-id="445320032805851136" data-chrome="noscrollbar">Tweets about "#cmbHack.js"</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
 
-  <footer>
-    <div class="row padded">
-      Organized by a bunch of developers from <a href='https://www.facebook.com/groups/nodejssl/'>JavaScript Sri Lanka</a>
-    </div>
-  </footer>
+          </div><!-- .row -->
+
+        </main>
+
+        <footer id="footer">
+          <div class="row padded">
+            Organized by a bunch of developers from <a href='https://www.facebook.com/groups/nodejssl/'>JavaScript Sri Lanka</a>
+          </div>
+        </footer>
+
+      </section>
+
+      <a class="exit-off-canvas"></a>
+
+    </div><!-- .inner-wrap -->
+  </div><!-- .off-canvas-wrap -->
+
 
   <!-- Load some extra styles and scripts -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <script src="vendor/foundation/js/foundation/foundation.js"></script>
+  <script src="vendor/foundation/js/foundation/foundation.topbar.js"></script>
+  <script src="vendor/foundation/js/foundation/foundation.offcanvas.js"></script>
+  <script src="vendor/foundation/js/foundation/foundation.dropdown.js"></script>
+  <script>$(document).foundation();</script>
   <script src="vendor/marked/marked.js"></script>
   <script src="assets/scripts.js"></script>
 

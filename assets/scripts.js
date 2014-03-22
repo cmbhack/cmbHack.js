@@ -1,6 +1,6 @@
 (function () {
 
-  var container = $('#container');
+  var container = $('#main');
   var HOMEPAGE = container.html();
   $(window).on('hashchange', loadPageContent);
   if (location.hash !== '') loadPageContent();
