@@ -36,10 +36,25 @@ body {
  * HEADER
  */
 
+.top-bar .name h1 a {
+  padding-top: 5px;
+  line-height: 0.9;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.top-bar .name h1 a small {
+  display: block;
+  margin-top: 5px;
+  color: rgb(255,255,255);
+}
+
 #header {
   position: relative;
   background: #FFF6BA;
   padding: 1rem 2rem 1rem;
+  text-align: center;
 }
 
 #header h1 {
@@ -63,30 +78,42 @@ body {
   line-height: 1;
   font-family: "Source Sans Pro";
 }
-#header .row .title{
-  margin:auto;
-  width:600px;
-}
-#header .row .title .logo{
-  margin:auto;
+
+#header .row .title .logo img {
   width:200px;
 }
-#header .row .title{
-  text-align:center;
+
+.register-now {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 125%;
+  text-transform: uppercase;
+  background: #e6ab22;
+  border: solid 5px #e6ab22;
 }
+
+.register-now:hover {
+  background: #f2c913;
+}
+
 .social {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 .social a,
 .social a:hover {
   display: inline-block;
-  width: 1.5rem;
+  min-width: 1.5rem;
+  padding: 0 0.2rem;
   text-align: center;
   color: rgb(50, 50, 50);
+  transition: opacity 0.5s;
+  opacity: 0.5;
+}
+
+.social a:hover {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 40em) {
@@ -131,73 +158,14 @@ body {
 }
 
 
-
 /*
- * MAIN
+ *
  */
 
-#main {
-  min-height: 500px;
+.page {
+  display: none;
 }
 
-
-/*
- *.index
- */
-
-.index h5 {
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #444;
-  border-bottom: 1px solid #ddd;
-}
-
-.index .lead a {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #bbb;
-}
-
-.index .lead a:hover {
-  padding-bottom: 3px;
-  border-bottom: 0;
-}
-
-.index .cmbjs-flow li span,
-.index .cmbjs-rules span {
-  display: inline-block;
-  width: 30px;
-  text-align: center;
-}
-
-.index .cmbjs-flow li {
-  min-height: 30px;
-  margin: 5px 0 5px 40px;
-}
-
-.index .cmbjs-flow li span {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: rgb(230, 230, 230);
-  border-radius: 30px;
-  text-align: center;
-  padding-top: 2px;
-  border: solid 2px;
-  margin-right: 5px;
-  margin-left: -40px;
-}
-
-.index .no-border li span {
-  border: 0px;
-  background-color: transparent;
-  font-size: 1.5rem;
-}
-
-.index .register-now {
-  font-family: "Source Sans Pro";
-  font-size: 1.5rem;
-  font-weight: 400;
-  border-radius: 3px;
-  background-color: #5D24C0;
+.page.visible {
+  display: block;
 }

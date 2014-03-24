@@ -14,167 +14,268 @@
 </head>
 <body>
 
-  <div class="off-canvas-wrap">
-    <div class="inner-wrap">
-
-      <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="index.html">cmbHack.js</a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  <div class="fixed">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#header">CMB<br>Hack<br><small>.JS</small></a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="#test4">Register Now!</a></li>
         </ul>
-
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li><a class="right-off-canvas-toggle"><i class="fa fa-bars"></i> Resources</a></li>
-          </ul>
-
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li><a href="https://docs.google.com/forms/d/1PVncC9XgMIBKs305KKIsKOZaDQJ3d1Tynb3ZAtIMz30/viewform"><i class="fa fa-plus-square-o"></i> Register</a></li>
-            <li><a href="#rules"><i class="fa fa-th-list"></i> Rules and Guidelines</a></li>
-            <!-- <li class="has-dropdown">
-              <a href="#">Button Dropdown</a>
-              <ul class="dropdown">
-                <li><a href="#">Link in dropdown</a></li>
-                <li><a href="#">Link in dropdown</a></li>
-                <li><a href="#">Link in dropdown</a></li>
-              </ul>
-            </li> -->
-            <li>
-              <li><a href="#who"><i class="fa fa-question-circle"></i> Who is doing cmbHack.js?</a></li>
-            </li>
-          </ul>
-        </section>
-      </nav>
-
-      <aside class="right-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><label>Javascript</label></li>
-          <li><a href="#">JS - The Right Way</a></li>
-          <li><a href="#">Superhero.js</a></li>
-          <li><label>Online Backend Services</label></li>
-          <li><a href="#">Firebase</a></li>
-          <li><a href="#">GoInstant</a></li>
-          <li><a href="#">UserApp</a></li>
-          <li><label>Online Database Services</label></li>
-          <li><a href="#">MongoHQ</a></li>
-          <li><a href="#">Cloudant</a></li>
-          <li><a href="#">Redislabs</a></li>
-          <li><label>Server Side Frameworks</label></li>
-          <li><a href="#">Express.js</a></li>
-          <li><a href="#">Meteor.js</a></li>
-          <li><a href="#">Jaggery.js</a></li>
-          <li><label>Frontend Frameworks</label></li>
-          <li><a href="#">Backbone.js</a></li>
-          <li><a href="#">Angular.js</a></li>
-          <li><a href="#">Ember.js</a></li>
-          <li><a href="#">Knockout.js</a></li>
-          <li><label>User Interface Toolkits</label></li>
-          <li><a href="#">Twitter Bootstrap</a></li>
-          <li><a href="#">Zurb Foundation</a></li>
-          <li><label>JavaScript for Desktop</label></li>
-          <li><a href="#">Node-Webkit</a></li>
-          <li><label>JavaScript for Hardware</label></li>
-          <li><a href="#">Noduino</a></li>
-          <li><label>Other Resources</label></li>
-          <li><a href="#">Deploying</a></li>
-          ...
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><a href="#intro">What is cmbHack.js?</a></li>
+          <li><a href="#rules">Rules and Guidelines</a></li>
+          <li><a href="#learning">Learning Resources</a></li>
+          <li><a href="#page2">Page 2</a></li>
         </ul>
-      </aside>
-
-      <section class="main-section">
-
-        <header id="header">
-          <div class="row">
-            <div class="title">
-              <div class="logo">
-                <h1><a href="index.html"><img src="assets/logo.png"/></a></h1>
-              </div>
-              <h2>Sri Lanka's First Hackathon</h2>
-              <h2>for</h2>
-              <h2>JavaScript Developers</h2>
-            </div>
-            <div class="social">
-              <a href="http://goo.gl/iKgkvp"><i class="fa fa-map-marker"></i></a>
-              <a href="https://www.facebook.com/cmbHack"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/cmbhack"><i class="fa fa-twitter"></i></a>
-            </div>
-          </div>
-        </header>
-
-        <main id="main" class="index">
-
-          <div class="row padded">
-
-            <div class="small-12 large-7 columns">
-              <h5>Hacking at cmbHack.js 101</h5>
-              <ul class="cmbjs-flow no-bullet">
-                <li><span><i class="fa fa-rocket"></i></span> Come to the hackathon venue with your dev-toolbox</li>
-                <li><span><i class="fa fa-lightbulb-o"></i></span> Pitch your idea or vote for an idea you like <br> <a href="#hacking">Guidelines</a> for your ideas (just guidelines, break anything if you need)</li>
-                <li><span><i class="fa fa-sort-amount-desc"></i></span> We select top 10 ideas based on the votes</li>
-                <li><span><i class="fa fa-users"></i></span> Join a team or recruit members for your team</li>
-                <li><span><i class="fa fa-code-fork"></i></span> Hack, tinker and build something awesome (within 32 hours)</li>
-                <li><span><i class="fa fa-bullhorn"></i></span> Present your idea & amaze others <br> We have some awesome list of prizes waiting for you</li>
-              </ul>
-              <h5>What comes out?</h5>
-              <p>Get your idea hats on, turn your pitching voice on. We are expecting to see some awesome JavaScript in action. Here are some area's you can think of:</p>
-              <ul class="cmbjs-flow">
-                <li>A single page web application/mobile application built on JS or uses heavy JS</li>
-                <li>A JS framework that can be used by JS/Web developers</li>
-                <li>Mashup of other apps/API's/tools</li>
-                <li>A server side API/package for web developers (May be on node.js)</li>
-                <li>Anything awesome that challenges JavaScript as a technology!</li>
-                <li>Anything worth featuring on <a href="http://badassjs.com/">badassjs</a></li>
-              </ul>
-              <h5>When is cmbHack.js happening?</h5>
-              <div class="panel">
-                <p>From <strong>5th April 9:00 am to 6th April 9:00 pm</strong> at the <a href='https://plus.google.com/115668075860765951814/about?gl=lk&hl=en'>Orion City</a></p>
-              </div>
-<!--               <p>Continue reading More information about <a href="#hacking">Hacking at cmbHack.js</a></p> -->
-            </div>
-
-            <div class="small-12 large-5 columns">
-              <div>
-                <h5>Who is it for?</h5>
-                <ul class="cmbjs-flow">
-                  <li>JavaScript developers, hackers &amp tinkers who love to code!</li>
-                  <li>UX Ninjas with great CSS/HTML skills</li>
-                  <li>PHP, Python, Ruby &amp Java backend developers</li>
-                  <li>Android &amp iOS gurus who believe in JavaScript on the Mobile</li>
-                </ul>
-                <h5>Why should I bother coming?</h5>
-                <ul class="cmbjs-flow">
-                  <li>Because you love to code/hack and be around people who are just like you.</li>
-                  <li>Because you like to discuss tech and work on new things.</li>
-                  <li>Because you will have the opportunity to talk about your ideas and show your work in JS in front of an audience who knows exactly what you are talking about.</li>
-                </ul>
-                <a href="https://docs.google.com/forms/d/1PVncC9XgMIBKs305KKIsKOZaDQJ3d1Tynb3ZAtIMz30/viewform" class="button expand register-now">Register Now <i class="fa fa-exclamation"></i></a>
-              </div>
-<!--               <div class="cmbjs-tweets">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23cmbHack" data-widget-id="445320032805851136" data-chrome="noscrollbar">Tweets about "#cmbHack"</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              </div> -->
-            </div>
-
-          </div><!-- .row -->
-        </main>
-
-        <footer id="footer">
-          <div class="row padded">
-            Organized by a bunch of developers from <a href='https://www.facebook.com/groups/nodejssl/'>JavaScript Sri Lanka</a>
-          </div>
-        </footer>
-
       </section>
+    </nav>
+  </div>
 
-      <a class="exit-off-canvas"></a>
+  <header id="header">
+    <div class="row">
+      <div class="title small-12 columns">
+        <div class="logo">
+          <a name="header"></a>
+          <h1><a href="index.html"><img src="assets/logo.png"/></a></h1>
+          <a href="#register" title="Register" class="register-now button">
+            Register Now!<br>
+            Orion City - 9am 4th to 4pm 5th
+          </a>
+        </div>
+      </div>
+      <div class="social">
+        <a href="http://goo.gl/iKgkvp"><i class="fa fa-map-marker"></i></a>
+        <a href="https://www.facebook.com/cmbHack"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/cmbhack"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/cmbhack">#cmbHack</a>
+      </div>
+    </div>
+  </header>
 
-    </div><!-- .inner-wrap -->
-  </div><!-- .off-canvas-wrap -->
+  <dl class="tabs" data-tab data-options="deep_linking:true" style="display:none">
+    <dd class="active"><a href="#homepage">Homepage</a></dd>
+    <dd><a href="#learning">Learning Resources</a></dd>
+    <dd><a href="#page2">Page 2</a></dd>
+  </dl>
 
+  <div class="tabs-content">
+
+    <div class="content" id="homepage">
+
+      <div class="row padded">
+
+        <div class="small-12 columns">
+
+          <h3 id="intro">What is cmbHack.js?</h3>
+          <p class="lead">Imagine a seething, vibrant group of coders, designers, entrepreneurs frantically sketching out concepts, typing up code, slapping together interfaces. Imagine award-winning ideas being tossed back and forth, juggled, improved and worked upon. Imagine a marathon of the mind.</p>
+          <p class="center">Welcome to cmbhack.js.</p>
+
+          <hr>
+
+        </div>
+
+        <div class="small-12 large-6 columns">
+
+          <h4><i class="fa fa-clock-o"></i> 34 hours to code!</h4>
+          <p>Cmbhack.js brings together enthusiastic Javascript wizards on projects entirely of their own. Cmbhack.js is open to both students and professional developers - in the space of 32 hours, you will:</p>
+          <ul>
+            <li>Pitch your latest and greatest ideas to your fellow participants. You have 30 seconds to grab their attention, so be prepared.<br><br></li>
+            <li>Meet, recruit and join like-minded Javascript geeks into making that idea a reality, right then and there<br><br></li>
+            <li>Hack away! Internet, meals and tech support will be provided. The best implementations will be judged and only the best will make it to the top!</li>
+          </ul>
+
+          <h4><i class="fa fa-code"></i> Why Javascript?</h4>
+          <p>Javascript is everywhere. It’s the tour-de-force of the Internet. It’s also one of the fastest-growing specializations in the tech industry. Show us what you can do. </p>
+
+        </div>
+
+        <div class="small-12 large-6 columns">
+
+          <h4><i class="fa fa-users"></i> Who is it for?</h4>
+          <ul>
+            <li>Developers, students and tinkerers who love to code!</li>
+            <li>UX designers with great CSS / HTML skills</li>
+            <li>PHP, Python, Ruby developers with JS skills</li>
+            <li>Android and iOS gurus who believe in JavaScript on the Mobile</li>
+          </ul>
+
+          <h4><i class="fa fa-question-circle"></i> Why should I come?</h4>
+          <ul>
+            <li>Because you love to work on great ideas with others</li>
+            <li>Because you love to code/hack and be around people who are just like you.</li>
+            <li>Because you will have the opportunity to talk about your ideas and show your work in JS in front of an audience who knows exactly what you are talking about.</li>
+          </ul>
+
+          <h4><i class="fa fa-briefcase"></i> What do I need to bring?</h4>
+          <ul>
+            <li>A laptop</li>
+            <li>An internet dongle is recommended</li>
+            <li>Pen and paper</li>
+            <li>A toothbrush for overnight hacking</li>
+            <li>Bring Rs. 500 for registration</li>
+          </ul>
+          <p>Internet access, power, food and drinks are at your disposal. </p>
+
+        </div>
+
+        <div class="small-12 columns">
+
+          <h4><i class="fa fa-shopping-cart"></i> What comes out</h4>
+          <p>We expect to see some awesome JavaScript in action. Here are some areas you can consider:</p>
+          <ul>
+            <li>A single page web application/mobile application built on JS or uses heavy JS</li>
+            <li>A JS framework that can be used by JS/Web developers</li>
+            <li>A JS-based mashup of other apps/APIs/tools/services</li>
+            <li>A server side JS API/package for web developers</li>
+            <li>Anything awesome that challenges JavaScript as a technology!</li>
+          </ul>
+          <p>For inspiration look at <a href="http://badassjs.com/" title="BadassJS">BadassJS</a></p>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <hr>
+
+      <div class="row padded">
+        <div class="small-12 columns">
+
+          <h3 id="rules">Rules and Guidelines</h3>
+          <ul>
+            <li>Don't bring something that's already been built. You have to build something from scratch.</li>
+            <li>JavaScript must be an integral part of the end solution</li>
+            <li>Stay within legal limits. Do not misuse the facilities that are provided to you</li>
+          </ul>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+    </div>
+
+    <div class="content" id="learning">
+
+      <div class="row padded">
+        <div class="small-12 columns">
+
+          <h3>Learning Resources</h3>
+          <p>I hope you can skip this part. But go through some resources to validate it.</p>
+          <ul>
+            <li><a href="http://jstherightway.org" title="http://jstherightway.org">http://jstherightway.org</a></li>
+            <li><a href="http://superherojs.com/" title="http://superherojs.com/">http://superherojs.com/</a></li>
+          </ul>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+
+          <h3>Build Realtime Apps Quickly with Meteor</h3>
+          <p>Meteor is a full stack  framework which helps you to build Real Time Web application very quickly. It is also possible to build mobile apps with meteor using HTML5. See this <a href="https://itunes.apple.com/us/app/ralph-chat/id782873767?mt=8">RalphChat</a> app.</p>
+          <p>DiscoverMeteor is the best way learn Meteor. We've partnered with them & you can read the whole book (PDF version) for free. <a href="https://cloudup.com/c2LLuAJGe3J">Click here to download</a>. (the book is being updated every month and it has valuable screencasts and interviews.  Buy the book if you really like to get those updates and content)</p>
+          <ul>
+            <li><a href="http://jstherightway.org" title="http://jstherightway.org">http://jstherightway.org</a></li>
+            <li><a href="http://superherojs.com/" title="http://superherojs.com/">http://superherojs.com/</a></li>
+          </ul>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+
+          <h3>Build Some apps with NodeJS</h3>
+          <p>If you are looking to build your app with NodeJS awesome. Follow these tips to jump start the development.</p>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Build a Jaggery.js app</h3>
+          <p><a href="http://jaggeryjs.org/">Jaggery.js</a> is a javascript application development framework that is is synchronous in nature. Jaggery runs on in a tomcat container and will be easy for people coming from a Java server side background. Jaggery can also use pre-existing Java and Javascript libraries.</p>
+          <ul>
+            <li><a href="http://geekdetected.wordpress.com/2014/01/19/basic-crud-operations-using-jaggery/" title="Basic CRUD operations with Jaggery">Basic CRUD operations with Jaggery</a></li>
+            <li><a href="http://dulitha.me/blog/2014/02/18/introduction-to-jaggery-dot-js-from-cmbjs/" title="Introduction to Jaggery.js">Introduction to Jaggery.js</a></li>
+          </ul>
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Build a Static App with a Realtime Backend</h3>
+          <p>Of course, you can build a static HTML5 app with a cloud backend solution like Firebase.</p>
+          <ul>
+            <li><a href="http://www.staticapps.org/">StaticApps.org</a> is your best resource</li>
+            <li>Follow <a href="http://nobackend.org/" title="http://nobackend.org/">http://nobackend.org/</a> as well</li>
+            <li>Of course you can use <a href="http://meteorhacks.com/building-static-websites-with-meteor.html">Meteor to build static apps</a> as well</li>
+          </ul>
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Learn Angular, Ember to jump start the FrontEnd development</h3>
+
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Learn About APIs to Build Mashups</h3>
+          <p>Building a Mashup with including two or more services is something you might do. For that you might need to learn about how to use different APIs. Refer following guides and resources to jumpstart with the APIs.</p>
+          <ul>
+            <li><a href="http://www.codecademy.com/tracks/apis" title="Codeacademy API Courses">Codeacademy API Courses</a></li>
+            <li><a href="https://www.mashape.com/">Mashape</a> - an API Marketplace</li>
+            <li>Use <a href="https://ifttt.com/wtf">IFTTT</a> or <a href="https://zapier.com/">Zapier</a> to connect with different APIs easily (no programming required)</li>
+          </ul>
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Deploying Your App</h3>
+          <p>Deployment is very simple these days and something you don't need to worry much. </p>
+          <ul>
+            <li>If you are using Meteor, you can deploy to <a href="http://docs.meteor.com/#deploying">meteor.com</a> with a single command</li>
+            <li>If your app is a <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">NodeJS</a> or RoR app, deploy it to <a href="https://www.heroku.com/">Heroku</a></li>
+            <li>If you are building an static app, deploy it to <a href="http://www.divshot.com/">Divshot</a> or <a href="http://pages.github.com/">Github Pages</a></li>
+            <li>Use backend services like <a href="https://www.firebase.com/">Firebase</a> (which also provides hosting for static apps)</li>
+          </ul>
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+          <h3>Build Something with Docker & JavaScript</h3>
+          <p>Docker is an internet sensations that changed the DevOps world. Of course there are a lot of ways, you can use Docker with JavaScript. Refer following links:</p>
+          <ul>
+            <li><a href="https://www.docker.io/gettingstarted/">Learning Docker</a></li>
+            <li><a href="https://github.com/apocas/dockerode" title="Docker & NodeJS">Docker & NodeJS</a></li>
+          </ul>
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+      <div class="row padded">
+        <div class="small-12 columns">
+        </div><!-- /.small-12 -->
+      </div><!-- /.row -->
+
+    </div>
+
+  </div><!-- /.tabs-content -->
+
+  <footer id="footer">
+    <div class="row padded">
+      Organized by a bunch of developers from <a href='https://www.facebook.com/groups/nodejssl/'>JavaScript Sri Lanka</a>
+    </div>
+  </footer>
 
   <!-- Load some extra styles and scripts -->
   <script src="vendor/foundation/js/vendor/modernizr.js"></script>
@@ -183,8 +284,7 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <script src="vendor/foundation/js/foundation/foundation.js"></script>
   <script src="vendor/foundation/js/foundation/foundation.topbar.js"></script>
-  <script src="vendor/foundation/js/foundation/foundation.offcanvas.js"></script>
-  <script src="vendor/foundation/js/foundation/foundation.dropdown.js"></script>
+  <script src="vendor/foundation/js/foundation/foundation.tab.js"></script>
   <script>$(document).foundation();</script>
   <script src="vendor/marked/marked.js"></script>
   <script src="assets/scripts.js"></script>
