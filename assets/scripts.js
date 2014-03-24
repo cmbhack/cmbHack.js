@@ -1,20 +1,19 @@
 
-document.addEventListener('DOMContentLoaded', function () {
 
-  var container = $('#main');
-  var HOMEPAGE = container.html();
-  $(window).on('hashchange', loadPageContent);
-  if (location.hash !== '') loadPageContent();
+// Smooth Scrolling
+// http://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-  function loadPageContent () {
-    var link = 'content/'+location.hash.slice(1)+'.md';
-    $.get(link).fail(function (res) {
-      delete document.body.dataset.twttrRendered;
-      container.html(HOMEPAGE);
-    }).done(function (res) {
-      var content = $('<div class="row padded"></div>').html(marked(res))
-      container.empty().append(content);
-    });
-  }
-
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000);
+        return true;
+      }
+    }
+  });
 });
