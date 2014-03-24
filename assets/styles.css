@@ -54,6 +54,7 @@ body {
   position: relative;
   background: #FFF6BA;
   padding: 1rem 2rem 1rem;
+  text-align: center;
 }
 
 #header h1 {
@@ -78,13 +79,7 @@ body {
   font-family: "Source Sans Pro";
 }
 
-#header .row .title{
-  margin:auto;
-  text-align:center;
-}
-
-#header .row .title .logo{
-  margin:auto;
+#header .row .title .logo img {
   width:200px;
 }
 
