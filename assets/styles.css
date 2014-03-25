@@ -57,11 +57,21 @@ body {
   color: rgb(255,255,255);
 }
 
+.top-bar-section li.active.register-button:not(.has-form) a:not(.button) {
+  background: #e6ab22;
+}
+
+.top-bar-section li.active.register-button:not(.has-form) a:not(.button):hover {
+  background: #f2c913;
+}
+
 #header {
   position: relative;
   background: #FFF6BA;
   padding: 1rem 2rem 1rem;
   text-align: center;
+  background: url('header.jpg');
+  background-size: cover;
 }
 
 #header h1 {
@@ -119,13 +129,8 @@ body {
   min-width: 1.5rem;
   padding: 0 0.2rem;
   text-align: center;
-  color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
   transition: opacity 0.5s;
-  opacity: 0.5;
-}
-
-.social a:hover {
-  opacity: 1;
 }
 
 @media only screen and (max-width: 40em) {
