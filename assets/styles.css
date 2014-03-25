@@ -38,6 +38,10 @@ body {
   height: 200px;
   max-width: none;
 }
+.gold{
+  background-color: #ffd700;
+  color: black;
+}
 
 /*
  * HEADER
