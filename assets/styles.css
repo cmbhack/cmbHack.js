@@ -96,7 +96,12 @@ body {
 .register-now:hover {
   background: #f2c913;
 }
-
+.register-now .first{
+  font-size: 150%;
+}
+.register-now .second{
+  font-style: italic;
+}
 .social {
   text-align: center;
 }
