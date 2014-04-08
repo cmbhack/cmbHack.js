@@ -190,3 +190,12 @@ body {
   min-height:500px;
   text-align:center;
 }
+/*
+.orbit-container { height: 400px; }
+
+.orbit-container .orbit-slides-container > * {
+  position: relative;
+  margin-left: 0;
+  float: left;
+  height: 100%;
+}*/

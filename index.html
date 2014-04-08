@@ -68,10 +68,7 @@
         <div class="logo">
           <a name="header"></a>
           <h1><a href="index.html"><img src="assets/logo.png"/></a></h1>
-          <a href="http://cmbhack-voting.meteor.com/" target="_blank" title="Register" class="register-now button">
-            <span class="first">Vote Now!</span><br>
-            <!-- <span class="second">Orion City - April 5th 7:30am to 6th 6pm</span> -->
-          </a>
+          <a href="#teams" class="register-now button">cmbHack.js 2013 Winners</a>
         </div>
       </div>
       <div class="social">
@@ -202,11 +199,37 @@
 
             <h5 style="font-weight: bold;">OVERALL WINNER</h5>
             <div class="small-12 large-6 columns">
-              <img src="assets/winner.png" width="100%">
+              <img src="assets/img/slide-2.jpg" alt="slide 2" width="100%" />
+              <!-- <ul data-orbit>
+                <li>
+                  <img src="assets/img/slide-1.jpg" alt="slide 1" />
+                  <div class="orbit-caption">
+                    Caption One.
+                  </div>
+                </li>
+                <li class="active">
+                  <img src="assets/img/slide-2.jpg" alt="slide 2" />
+                  <div class="orbit-caption">
+                    Caption Two.
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/img/slide-3.jpg" alt="slide 3" />
+                  <div class="orbit-caption">
+                    Caption Three.
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/img/slide-4.jpg" alt="slide 4" />
+                  <div class="orbit-caption">
+                    Caption Four.
+                  </div>
+                </li>
+              </ul> -->
             </div>
             <div class="small-12 large-6 columns">
               <h3>KO Train</h3>
-              <p>The railway is one of most convenient public transport method because it saves time apart from being late at times. Generally a train at least one  or twice a month gets late without any prior notice. (personal experience) . Although the department of railway has a trainshedule app/website  they never notify people about train delays. So  we decided to come up with a simple solution for this problem which is users can share their information about train delays each other. </p>
+              <p>“How many of you travel by train? If you want to travel from point A to B and if the track exists, train’s technically the easiest way. Unfortunately, we have problems.” The KO TRAIN team takes up the stage. “There’s an app by ICTA for all the train schedules, with over 100,000 downloads. The problem is, it’s not updated and nor does it account for delay.</p>
               <h4>TEAM MEMBERS</h4>
               <ul>
                 <li>Pahan Sarathchandra</li>
@@ -714,10 +737,20 @@
   <script src="vendor/foundation/js/vendor/jquery.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-  <script src="vendor/foundation/js/foundation/foundation.js"></script>
-  <script src="vendor/foundation/js/foundation/foundation.topbar.js"></script>
-  <script src="vendor/foundation/js/foundation/foundation.tab.js"></script>
-  <script>$(document).foundation();</script>
+  <script src="vendor/foundation/js/foundation.min.js"></script>
+<!--   // <script src="vendor/foundation/js/foundation/foundation.topbar.js"></script>
+  // <script src="vendor/foundation/js/foundation/foundation.orbit.js"></script>
+  // <script src="vendor/foundation/js/foundation/foundation.tab.js"></script> -->
+  <script>
+    $(document).foundation({
+      orbit: {
+          slide_number: false
+        , timer_speed: 2000
+      //   , next_class: 'hidden'
+      //   , prev_class: 'hidden'
+      }
+    });
+  </script>
   <script src="vendor/marked/marked.js"></script>
   <script src="assets/scripts.js"></script>
   <script>
