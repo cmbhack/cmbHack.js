@@ -38,6 +38,14 @@ body {
   height: 200px;
   max-width: none;
 }
+.gold{
+  background-color: #ffd700;
+  color: black;
+}
+.silver{
+  background-color: #CCCCCC;
+  color: black;
+}
 
 /*
  * HEADER
@@ -58,7 +66,7 @@ body {
 }
 
 .top-bar-section li.active.register-button:not(.has-form) a:not(.button) {
-  background: #e6ab22;
+  background: #DE3D18;
 }
 
 .top-bar-section li.active.register-button:not(.has-form) a:not(.button):hover {
@@ -106,7 +114,7 @@ body {
   font-weight: bold;
   font-size: 125%;
   text-transform: uppercase;
-  background: #e6ab22;
+  background: #E11C17;
   border: solid 5px #e6ab22;
 }
 
@@ -177,3 +185,17 @@ body {
     text-align: center;
   }
 }
+
+#register {
+  min-height:500px;
+  text-align:center;
+}
+/*
+.orbit-container { height: 400px; }
+
+.orbit-container .orbit-slides-container > * {
+  position: relative;
+  margin-left: 0;
+  float: left;
+  height: 100%;
+}*/
